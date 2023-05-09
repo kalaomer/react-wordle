@@ -28,7 +28,8 @@ export const shareStatus = (
       solution,
       guesses,
       getEmojiTiles(isDarkMode, isHighContrastMode)
-    )
+    )  + `\n\n` +
+    'https://wordle.kalaomer.com'
 
   const shareData = { text: textToShare }
 
