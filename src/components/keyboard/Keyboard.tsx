@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-import { DELETE_TEXT, ENTER_TEXT } from '../../constants/strings'
+import { DELETE_TEXT, ENTER_TEXT, LETTERS } from '../../constants/strings'
 import { getStatuses } from '../../lib/statuses'
 import { localeAwareUpperCase } from '../../lib/words'
 import { Key } from './Key'
@@ -43,7 +43,7 @@ export const Keyboard = ({
       } else {
         const key = localeAwareUpperCase(e.key)
         // TODO: check this test if the range works with non-english letters
-        if (key.length === 1 && key >= 'A' && key <= 'Z') {
+        if (key.length === 1 && LETTERS.includes(key)) {
           onChar(key)
         }
       }
@@ -57,7 +57,7 @@ export const Keyboard = ({
   return (
     <div>
       <div className="mb-1 flex justify-center">
-        {['Q', 'W', 'E', 'R', 'T', 'Y', 'Ü', 'U', 'I', 'O', 'P', 'Ğ', 'Ü'].map((key) => (
+        {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'Ğ', 'Ü'].map((key) => (
           <Key
             value={key}
             key={key}

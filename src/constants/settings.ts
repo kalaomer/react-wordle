@@ -1,4 +1,4 @@
-import { enUS } from 'date-fns/locale'
+import { tr } from 'date-fns/locale'
 
 export const MAX_CHALLENGES = 6
 export const ALERT_TIME_MS = 2000
@@ -10,4 +10,6 @@ export const ENABLE_MIGRATE_STATS = true
 export const BLOWFISH_KEY = 'xcQUAHsik#Thq&LG*8es2DsZ$3bw^e'
 export const BLOWFISH_IV = '#45XmF^w'
 export const ENABLE_ARCHIVED_GAMES = false
-export const DATE_LOCALE = enUS
+export const DATE_LOCALE = tr
+export const LETTERS = ["A", "B", "C", "Ç" ,"D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N",
+                        "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z", "X", "W", "Q"]
