@@ -10,61 +10,59 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+      WORDLE'i 6 denemede bulun. Her tahmin 5 harfli doğru bir kelime olmalıdır. Göndermek için enter'a basın. Her tahminden sonra kutucukların renkleri tahmininizin yakınlığına göre değişecektir.
       </p>
 
       <div className="mb-1 mt-4 flex justify-center">
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="A"
           status="correct"
         />
+        <Cell value="B" isCompleted={true} />
+        <Cell value="O" isCompleted={true} />
+        <Cell value="N" isCompleted={true} />
         <Cell value="E" isCompleted={true} />
-        <Cell value="A" isCompleted={true} />
-        <Cell value="R" isCompleted={true} />
-        <Cell value="Y" isCompleted={true} />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        A harfi kelimede var ve doğru yerde.
       </p>
 
       <div className="mb-1 mt-4 flex justify-center">
-        <Cell value="P" isCompleted={true} />
-        <Cell value="I" isCompleted={true} />
+        <Cell value="G" isCompleted={true} />
+        <Cell value="İ" isCompleted={true} />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="Z"
           status="present"
         />
-        <Cell value="O" isCompleted={true} />
-        <Cell value="T" isCompleted={true} />
+        <Cell value="E" isCompleted={true} />
+        <Cell value="M" isCompleted={true} />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        Z harfi kelimede var fakat yanlış yerde.
       </p>
 
       <div className="mb-1 mt-4 flex justify-center">
-        <Cell value="V" isCompleted={true} />
+        <Cell value="F" isCompleted={true} />
         <Cell value="A" isCompleted={true} />
-        <Cell value="G" isCompleted={true} />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
-        <Cell value="E" isCompleted={true} />
+        <Cell value="L" isCompleted={true} />
+        <Cell isRevealing={true} isCompleted={true} value="E" status="absent" />
+        <Cell value="Z" isCompleted={true} />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        E harfi kelimede yok.
       </p>
 
       <p className="mt-6 text-sm italic text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
+        Bu site Ömer Kala tarafından çevresi için yayına aldığı Wordle benzeri bir uygulamadır. -{' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
+          href="https://kalaomer.com"
           className="font-bold underline"
         >
-          check out the code here
+          Ömer Kala hakkında bilgi almak için tıklayınız :)
         </a>{' '}
       </p>
     </BaseModal>
