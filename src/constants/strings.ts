@@ -37,3 +37,5 @@ export const DATEPICKER_TITLE = 'Choose a past date'
 export const DATEPICKER_CHOOSE_TEXT = 'Choose'
 export const DATEPICKER_TODAY_TEXT = 'today'
 export const ARCHIVE_GAMEDATE_TEXT = 'Game date'
+export const LETTERS = ["A", "B", "C", "Ç" ,"D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N",
+                        "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z", "X", "W", "Q"]

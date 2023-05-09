@@ -11,5 +11,3 @@ export const BLOWFISH_KEY = 'xcQUAHsik#Thq&LG*8es2DsZ$3bw^e'
 export const BLOWFISH_IV = '#45XmF^w'
 export const ENABLE_ARCHIVED_GAMES = false
 export const DATE_LOCALE = tr
-export const LETTERS = ["A", "B", "C", "Ç" ,"D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N",
-                        "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z", "X", "W", "Q"]
